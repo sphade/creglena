@@ -1,0 +1,113 @@
+
+
+.card {
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 6px 18px -9px black;
+  transition: transform 100ms ease-in;
+  cursor: pointer;
+  height: 350px;
+  width: 50%;
+  color: black;
+  text-decoration: none;
+  
+}
+
+.card:link{
+  text-decoration: none;
+
+}
+
+.card:hover {
+  transform: scale(1.07);
+}
+.card img {
+  object-fit: fill;
+  min-width: 100px;
+  height: 20%;
+  min-height: 200px;
+
+  width: 100%;
+}
+
+.card__info {
+  margin-top: -9px;
+  border-radius: 10px;
+  padding: 20px;
+  padding-top: 20px;
+  border: 1;
+}
+
+.card__info h4 {
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.card__info h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+@media screen and (max-width:700px){
+  .card {
+    margin: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 6px 18px -9px black;
+    transition: transform 100ms ease-in;
+    cursor: pointer;
+    height: 300px;
+    width: 50%;
+  }
+  .card img {
+    object-fit: contain;
+    min-width: 20px;
+    height: 10%;
+    min-height: 200px;
+  
+    width: 100%;
+  }
+  .card__info h2 {
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .card__info h4 {
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 3px;
+    margin-bottom: 2px;
+  }
+}
+
+@media screen and (max-width:500px){
+  .card {
+    margin: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 6px 18px -9px black;
+    transition: transform 100ms ease-in;
+    cursor: pointer;
+    height: 300px;
+    width: 50%;
+  }
+  .card img {
+    object-fit: contain;
+    min-width: 20px;
+    height: 10%;
+    min-height: 200px;
+  
+    width: 100%;
+  }
+  .card__info h2 {
+    font-size: 12px;
+    font-weight: 900;
+  }
+  .card__info h4 {
+    font-size: 10px;
+    font-weight: 500;
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+}

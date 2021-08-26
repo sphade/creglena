@@ -1,0 +1,96 @@
+.search {
+  display: flex;
+  height: 300px;
+  width: 100vw;
+  max-width: 50%;
+  border: 1px solid white;
+  min-width: 10%;
+  position: absolute;
+  right: 0.5;
+  background-color: whitesmoke;
+  color: tomato;
+  margin-top: 30px;
+  top: 10px;
+  left: 20%;
+  justify-content: space-between;
+}
+
+.week {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 10px;
+  font-weight: 900;
+}
+.week p {
+  padding: 10px;
+  border-bottom: 1px rgba(0, 0, 0, 0.411) solid;
+}
+.week p:hover {
+  cursor: pointer;
+}
+
+.week p:active {
+  transition: 0.2s ease-out;
+  color: blue;
+}
+
+.day {
+  display: grid;
+  width: 100%;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin: 3%;
+  margin-left: 30px;
+}
+
+.day p {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-radius: 10px;
+}
+
+.day p:hover {
+  transition: 0.3s ease-out;
+  background-color: tomato;
+  color: white;
+}
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10%;
+  width: 50%;
+  color: white;
+  font-weight: lighter;
+  font-size: 10px;
+  position: absolute;
+  top: 87%;
+  left: 20%;
+  background-color: violet;
+}
+.left input {
+  width: 30%;
+  position: relative;
+  left: 10%;
+}
+
+.left input:focus {
+  outline-width: 0;
+  border: none;
+}
+
+.left button {
+  width: 50%!important;
+  margin-left: 180px!important;
+  font-size: 10px!important;
+  background-color: lawngreen!important;
+  font-weight: 900!important;
+  color: rgb(109, 92, 92)!important;
+}
+
+.left button:hover {
+  background-color: white!important;
+  color: lawngreen!important;
+
+}
